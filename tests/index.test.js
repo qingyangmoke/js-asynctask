@@ -1,14 +1,4 @@
-# js-asynctask
-js中 执行异步任务
-
-## 安装
-```js
- npm i js-asynctask --save
-```
-
-## 使用
-```js
-import asyncTask from 'js-asynctask';
+import asyncTask from '../index.js';
 const middleWares = [];
 
 middleWares.push(async function (context, next) {
@@ -36,5 +26,3 @@ const context = {
 asyncTask(middleWares, context).then(() => {
   console.log('finished', context.count);
 });
-
-```
