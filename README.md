@@ -8,7 +8,8 @@ js中 执行异步任务
 
 ## 使用
 ```js
-import asyncTask from 'js-asynctask';
+const asyncTask = require('js-asynctask');
+
 const middleWares = [];
 
 middleWares.push(async function (context, next) {

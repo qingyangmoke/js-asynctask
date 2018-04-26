@@ -16,4 +16,4 @@ async function runAsyncTask(middleWares, ...args) {
   await next();
 }
 
-export default runAsyncTask;
+module.exports = runAsyncTask;
